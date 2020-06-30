@@ -6,7 +6,6 @@
 
 AWAIR Local Sensor for Home Assistant 입니다.<br>
 
-![screenshot_1](https://github.com/miumida/awair2mqtt/blob/master/image/awair2mqtt.png?raw=true)<br>
 ![screenshot_2](https://github.com/miumida/awair2mqtt/blob/master/image/awair2mqtt_sensor.png?raw=true)<br>
 
 <br>
