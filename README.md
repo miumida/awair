@@ -1,4 +1,4 @@
-# awair
+# AWAIR Local Sensor
 
 ![HAKC)][hakc-shield]
 ![HACS][hacs-shield]
