@@ -1,0 +1,10 @@
+{
+    "domain": "awair",
+    "name": "awair",
+    "documentation": "https://github.com/miumida/awair",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": [
+        "@miumida"
+    ]
+}
