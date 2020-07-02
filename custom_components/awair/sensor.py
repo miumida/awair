@@ -226,3 +226,7 @@ class awairPropSensor(Entity):
 
         return attr
 
+    @property
+    def unit_of_measurement(self):
+        """Return the units of measurement."""
+        return _AWAIR_PROPERTIES[self._key][1]
