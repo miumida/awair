@@ -14,6 +14,7 @@ AWAIR Local Sensor for Home Assistant 입니다.<br>
 | Version | Date        | 내용              |
 | :-----: | :---------: | ----------------------- |
 | v1.0.0  | 2020.06.30  | First version  |
+| v1.0.1  | 2020.07.02  | unit_of_measurement 추가 |
 
 <br>
 
@@ -34,6 +35,7 @@ AWAIR Local Sensor for Home Assistant 입니다.<br>
 ```yaml
 sensor:
   - platform: awair
+    scan_interval: 60
     devices:
       - id: '[Your AWAIR Device ID]'
         name: '[Your AWAIR Device Name]'
