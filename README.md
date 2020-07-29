@@ -78,6 +78,6 @@ sensor:
 [1] 네이버 HomeAssistant 카페 | 랜이님의 어웨어 로컬센서 설정기 (<https://cafe.naver.com/koreassistant/703>)<br>
 [2] 네이버 HomeAssistant 카페 | 크리틱님의 Awair를 Local로 사용하기 + α (<https://cafe.naver.com/koreassistant/729>)<br>
 
-[version-shield]: https://img.shields.io/badge/version-1.0.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-1.1.0-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
 [hacs-shield]: https://img.shields.io/badge/HACS-Custom-red.svg
