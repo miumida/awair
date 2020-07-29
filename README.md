@@ -15,7 +15,7 @@ AWAIR Local Sensor for Home Assistant 입니다.<br>
 | :-----: | :---------: | ----------------------- |
 | v1.0.0  | 2020.06.30  | First version  |
 | v1.0.1  | 2020.07.02  | unit_of_measurement 추가 |
-| v1.0.2  | 2020.07.29  | air-data 속성 추가 &  |
+| v1.1.0  | 2020.07.29  | air-data 속성 추가 |
 
 <br>
 
