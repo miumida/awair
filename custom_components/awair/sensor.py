@@ -38,6 +38,16 @@ _AWAIR_PROPERTIES = {
   'pm25':  ['PM2.5',       '㎍/㎥', 'mdi:blur'],
   'lux':   ['Light',       'lux',   'mdi:weather-sunny'],
   'spl_a': ['Noise',       'dBA',   'mdi:volume-vibrate'],
+
+  "timestamp":      ['TimeStamp',       None,   'mdi:clock-outline'],
+  "dew_point":      ['Dew point',       'g/㎥', 'mdi:snowflake'],
+  "abs_humid":      ['ABS Humidity',    '%',    'mdi:water-percent'],
+  "co2_est":        ['CO2 Est',         None,   'mdi:molecule-co2'],
+  "voc_baseline":   ['VOC Baseline',    None,   'mdi:chemical-weapon'],
+  "voc_h2_raw":     ['VOC H2 Raw',      None,   'mdi:chemical-weapon'],
+  "voc_ethanol_raw":['VOC Ethanol Raw', None,   'mdi:chemical-weapon'],
+  "pm10_est":       ['PM1.0 Est',       None,   'mdi:blur-linear'],
+
   "device_uuid": ['Device UUID', None, 'mdi:devices'],
   "wifi_mac":    ['Wifi mac',    None, 'mdi:wifi'],
   "ssid":        ['SSID',        None, 'mdi:wifi'],
@@ -80,7 +90,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
         sensors += [sensor]
 
         for key, value in sensor._data.items():
-            sensors += [awairPropSensor(awair[CONF_ID], key, value, sensor)]
+            if key in _AWAIR_PROPERTIES :
+                sensors += [awairPropSensor(awair[CONF_ID], key, value, sensor)]
 
     add_entities(sensors, True)
 
@@ -176,7 +187,8 @@ class awairSensor(Entity):
         attr = {}
 
         for key in self._data:
-            attr[_AWAIR_PROPERTIES[key][0]] = '{}{}'.format(self._data[key], '' if _AWAIR_PROPERTIES[key][1] is None else ' {}'.format(_AWAIR_PROPERTIES[key][1]) )
+            if key in _AWAIR_PROPERTIES :
+                attr[_AWAIR_PROPERTIES[key][0]] = '{}{}'.format(self._data[key], '' if _AWAIR_PROPERTIES[key][1] is None else ' {}'.format(_AWAIR_PROPERTIES[key][1]) )
 
         #attr['IP'] = self._ip
 
